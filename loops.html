@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Maps</h1>
+    <ul id="list">
+
+    </ul>
+
+    <script>
+        let employee = new Map([
+     ["Ukpono Andem","Female Dev "],
+     ["Happiness",  "Marketer"], 
+     ["Sir Brandon", "Senior Dev"]
+   ])
+   
+   let list = document.getElementById("list")
+   employee.forEach((vaule,key) => {
+    let newitem = document.createElement("li")
+    newitem.textContent= `${vaule}:${key}`
+    list.appendChild(newitem)
+  
+   })
+    </script>
+
+    <h1>Set</h1>
+    <ul id="items"></ul>
+
+    <script>
+      let name = ['a','b','c','d','e']  
+   
+
+     
+      let items = document.getElementById("items")
+      name.forEach((vaule,key) =>{
+        let newlist=document.createElement("")
+        newlist.textContent= `${vaule}: ${key}`
+        items.appendChild(newlist)
+      })
+
+   let letter = ["a,b,c,d,e,f"]
+   let element=""
+  for (let x of letter) {
+    element=element+x
+    console.log(x)
+  }
+    </script>
+</body>
+</html>

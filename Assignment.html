@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="nums"></p>
+    <p id="grade"></p>
+    <p id="leap"></p>
+    <script>
+
+      let numbers = ["uk","andem", "wis" ,"4"]
+
+      // function sum_array(a){
+      //   let sum = 0
+      //   for(let i =0; i<a.length; i++){
+      //       sum = sum + a[i]
+      //   }
+      //   console.log(sum)
+      // }
+
+      // sum_array(numbers)
+/*
+      function length_array(a){
+        for (let i=0; i<a.length; i++){
+          length =  i
+        }
+        console.log(length)
+      }
+      
+length_array(numbers)
+*/
+   function calculate_grade(scores){
+    if (scores >=90){
+      console.log("Grade A")
+    }else if (scores >= 80 && scores < 90){
+      console.log("Grade B")
+    }else if (scores >=70 && scores < 80){
+      console.log("Grade C")
+    }else if (scores >= 60 && scores < 70){
+      console.log("Grade D")
+    }else if (scores >= 60){
+      console.log("Grade F")
+    }else{
+      console.log("No Grade found")
+    }
+   }
+
+  calculate_grade(73)
+
+
+  function convert_temperature(temp,scales){
+    function fahrenheit (celsius){
+      let fahrenheit = (celsius* 9/5) +32
+      console.log(`${fahrenheit}F`)
+    }
+
+function celsius(fahrenheit){
+  let celsius = (fahrenheit -32) *5/9
+  console.log(`${celsius}C`)
+}
+
+ if (scales =="C"){
+  celsius(temp)
+ }else{
+  fahrenheit(temp)
+ }
+  }
+
+  convert_temperature(6,"F")
+
+
+    function leap_year(year){
+      if (year%4 == 0){
+        console.log("True")
+      }else if (year%100 == 0){
+        console.log("False")
+      
+      }
+    }
+
+  leap_year(1700)
+
+
+/*
+let numbers = prompt("Enter number")
+ function nums(){
+if (numbers > 0){
+   alert("True is positive")
+}
+else if (numbers == 0){
+   alert("The number is zero")
+}else{
+   alert("false")
+}
+}
+nums()
+let year = parseFloat(prompt("Enter year"))
+
+ function leap(year) {
+   if ( year% 100 === 0){
+      alert("false")
+   }
+   else if (year % 400 === 0){
+   alert("true")
+   }
+   else if (year % 4 === 0){
+      alert("true")
+   }else{
+      alert("No year found")
+   }
+ }
+ 
+leap()
+
+
+
+
+*/
+
+
+    </script>
+</body>
+</html>

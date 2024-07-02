@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+<!--input type="text" id="todos" placeholder="Enter a items">
+    <button id="add">Add</button-->
+    <ul id="items">
+    </ul>
+    <script>
+        /*
+            user = document.getElementById("todos");
+            submit_button = document.getElementById("add");
+            items = document.getElementById("items");
+
+           
+            let array = [];
+
+        function add() {
+            let user_Text = user.value;
+          console.log(  array.push(user_Text));
+  console.log(array.value)
+            items.innerHTML = '';
+            for (let i = 0; i < array.length; i++) {
+                console.log(array[i])
+                let newlist = document.createElement("li");
+                newlist.textContent = array[i];
+                items.appendChild(newlist);
+            }
+        }
+
+        submit_button.addEventListener("click", add);
+    
+*/
+
+
+
+ let array = ["cook","play","read","solve"]
+ let items = document.getElementById("items")
+ for (let i=0; i<array.length;i++){
+    console.log(array[i])
+    let  newline = document.createElement("li")
+    newline.textContent =array[i]
+    items.appendChild(newline)
+}
+//let ourarray = ["hello","hi","hey","hwfa"]
+//document.getElementById("items").innerHTML=(ourarray[Math.floor(Math.random() * 3)])
+
+
+    </script>
+</body>
+</html>

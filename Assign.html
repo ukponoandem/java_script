@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+         function reverseString(inputstring){
+        return inputstring.split("").reverse().join("");
+      }
+          let reverse = ("hello world")
+  let original = reverseString(reverse)
+ 
+  alert(original)
+*/
+
+
+ //let reverseWord = "Hello world "
+ //let str = reverseWord.split("").reverse().join("")
+ //console.log(str)
+
+   /* 
+ let Names = ["A","B", "A","c","E","B","F","C" ]
+ let arr = Names.forEach((key,value) =>{
+    console.log(key,value)
+ })
+ */
+/*
+function myfunction(arr){
+    return arr.charAt(0).toUppperCase()+arr.slice(1)
+} 
+let letter = `hello world`
+let  myletter = myfunction(letter)
+console.log(myletter)
+
+*/
+
+  //Split the input sentence into an array of words.
+// Iterate over each word in the array.
+ //For each word, capitalize the first letter.
+ //Join the modified words back into a single string.
+ //Return the resulting string.
+/*
+ 
+
+ function capitalizeFirstLetterEachWord(sentence) {
+  // Step 1: Split the input sentence into an array of words.
+  const words = sentence.split(' ');
+
+  // Step 2: Iterate over each word in the array.
+  const capitalizedWords = words.map(function(word) {
+    // Step 3: For each word, capitalize the first letter.
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+
+  // Step 4: Join the modified words back into a single string.
+  const result = capitalizedWords.join(' ');
+
+  // Step 5: Return the resulting string.
+  return result;
+}
+
+// Example usage:
+const sentence = "hello world";
+const capitalizedSentence = capitalizeFirstLetterEachWord(sentence);
+console.log(capitalizedSentence)
+*/
+ /*
+ function capitalizestring(sentence){
+    let newstring = sentence.split(' ')
+    let capitalize = newstring.map(function(word){
+        return word.charAt(0).toUpperCase() + word.slice(1)
+    })
+    let capitalizedWords = capitalize.join(' ')
+    return capitalizedWords
+ }
+ let sentence = " a software developer"
+ let capitalizedSentence = capitalizestring(sentence)
+ console.log(capitalizedSentence)
+*/
+
+  
+  function capitalizeFirstLetterEachWord(sentence){
+    let capitalizedWords= sentence.split(" ")
+    let newstring = capitalizedWords.map(function(word){
+        return  word.charAt(0).toUpperCase() + word.slice(1)
+    })
+    let capitalize = newstring.join(" ")
+    return capitalize
+  }
+ let sentence = "am a female software developer"
+ let string =  capitalizeFirstLetterEachWord(sentence)
+ console.log(string)
+
+ function toreverse(){
+ let array = [1,2,3,4,5,6]
+ array.reverse()
+ console.log(array)
+
+ }
+ toreverse()
+  
+ //let array = "2,3,4,5,6,7,8"
+ // let arr=   array.split("").reverse().join("")
+ //console.log(arr)
+
+ //let reverseWord = "Hello world "
+ //let str = reverseWord.split("").reverse().join("")
+ //console.log(str)
+
+ function countoccurence(){
+    let count = ["A","B", "A","c","E","B","C","C" ]
+    let mycount = count.forEach((key,value) =>{
+ return key, value
+ console.log(mycount)
+    })
+
+ }
+ countoccurence()
+
+
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--- <input type="text" id="todos" placeholder="Enter your items">
+   <button id="sum">Submit</button>
+   <ul id="root">-->
+
+   </ul>
+ <p id="result"></p>
+<input type="text" id="age" placeholder="Enter your age">
+<button id="checkButton" onclick="checkAge()">Check Age</button>
+<p id="result"></p>
+
+<script>
+    function checkAge() {
+        let ageInput = document.getElementById("age").value;
+        let resultParagraph = document.getElementById("result");
+        
+        if (ageInput === "") {
+            resultParagraph.textContent = "Please enter your age.";
+        } else {
+            let age = parseInt(ageInput); // Convert input value to integer
+            
+            if (isNaN(age)) {
+                resultParagraph.textContent = "Invalid age. Please enter a number.";
+            } else {
+                if (age >= 18) {
+                    resultParagraph.textContent = "You are old enough.";
+                } else {
+                    resultParagraph.textContent = "You are too young.";
+                }
+            }
+        }
+    }
+/*
+    let text="";
+    let i=0
+    while (i<11){
+      text+=  "<br>"+i ;i++
+    }
+document.getElementById("result").innerHTML=text
+*/
+/*
+  let tex = "";
+  let i=0;
+  while(i<10){
+    tex+= +i;i++
+  }
+  console.log(tex)
+
+*/
+/*
+  let text = "";
+  let i=0;
+  do {
+    text+= +i;i++;
+  }
+  while(i<=11)
+  console.log(text)
+
+*/
+
+  let cars = ["denz","bwn", "coll"]
+  let tex ="";
+  let i =0
+  while(cars[i]){
+    tex += cars[i] + "<br>";i++;
+  }
+console.log(tex)
+
+    /*
+  user_items = document.getElementById("todos")
+  submit_button = document.getElementById("sum")
+ root = document.getElementById("root")
+
+ let newarray = []
+ function sum(){
+   let user_Text=user_items.value
+   newarray.push(user_Text)
+   console.log(newarray)
+   root.innerHTML ='';
+   for (let i=0;i<newarray.length;i++){
+   console.log(newarray[i])
+   let newitems = document.createElement("li")
+   newitems.textContent=newarray[i]
+   root.appendChild(newitems)
+   }
+
+ }
+ submit_button.addEventListener("click", sum)
+      /*
+    let array = [1,2,3,4,5,6,7,8,9,10]
+    let sum = array.map(value => {
+        
+ return value *2
+    })
+  console.log(sum)
+
+  let numbers = [1,2.3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+  let even = numbers.filter(number => number% 2==0({
+
+  }))
+  console.log(even)
+  let odd = numbers.filter(number => number% 2!=0({
+
+  }))
+  console.log(odd)
+
+*/
+
+  
+let array = [1,2,3,4,5,6,7,8,9,10]
+
+function newlength(line){
+  for (let i=0;i<line.length;i++){
+    length = i
+  }
+  console.log(length)
+}
+newlength(array)
+
+
+  let ourarray = ["hello","hi","hey","hwfa"]
+  console.log(ourarray[Math.floor(Math.random() * 3)])
+
+ 
+
+   </script> 
+</body>
+</html>
